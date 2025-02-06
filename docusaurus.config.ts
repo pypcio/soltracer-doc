@@ -10,15 +10,15 @@ const config: Config = {
 	favicon: "img/favicon.ico",
 
 	// Set the production url of your site here
-	url: "https://pypcio.github.io",
+	url: "https://doc.soltracer.com",
 	// Set the /<baseUrl>/ pathname under which your site is served
 	// For GitHub pages deployment, it is often '/<projectName>/'
-	baseUrl: "/soltracer-doc/",
+	baseUrl: "/",
 
 	// GitHub pages deployment config.
 	// If you aren't using GitHub pages, you don't need these.
-	organizationName: "pypcio", // Usually your GitHub org/user name.
-	projectName: "soltracer-doc", // Usually your repo name.
+	organizationName: "soltracer", // Usually your GitHub org/user name.
+	projectName: "logger-docs", // Usually your repo name.
 	deploymentBranch: "gh-pages",
 
 	onBrokenLinks: "throw",
