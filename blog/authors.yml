@@ -15,9 +15,23 @@ slorber:
   image_url: https://github.com/slorber.png
   page:
     # customize the url of the author page at /blog/authors/<permalink>
-    permalink: '/all-sebastien-lorber-articles'
+    permalink: "/all-sebastien-lorber-articles"
   socials:
     x: sebastienlorber
     linkedin: sebastienlorber
     github: slorber
     newsletter: https://thisweekinreact.com
+
+stymcio:
+  name: Szymon Tymcio
+  title: Soltracer maintainer
+  url: https://github.com/pypcio
+  image_url: https://github.com/pypcio.png
+  page:
+    # customize the url of the author page at /blog/authors/<permalink>
+    permalink: "/all-stymcio-articles"
+  socials:
+    x: STymcio
+    linkedin: szymon-tymcio-411882261
+    github: pypcio
+

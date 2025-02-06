@@ -64,14 +64,14 @@ Markdown code blocks are supported with Syntax highlighting.
 ````md
 ```jsx title="src/components/HelloDocusaurus.js"
 function HelloDocusaurus() {
-  return <h1>Hello, Docusaurus!</h1>;
+	return <h1>Hello, Docusaurus!</h1>;
 }
 ```
 ````
 
 ```jsx title="src/components/HelloDocusaurus.js"
 function HelloDocusaurus() {
-  return <h1>Hello, Docusaurus!</h1>;
+	return <h1>Hello, Docusaurus!</h1>;
 }
 ```
 
@@ -80,9 +80,9 @@ function HelloDocusaurus() {
 Docusaurus has a special syntax to create admonitions and callouts:
 
 ```md
-:::tip My tip
+:::note My Note
 
-Use this awesome feature option
+Super note template
 
 :::
 
@@ -93,9 +93,15 @@ This action is dangerous
 :::
 ```
 
-:::tip My tip
+:::note My Note
 
-Use this awesome feature option
+Super note template
+
+:::
+
+:::tip My Tip
+
+Super tip template
 
 :::
 
@@ -131,22 +137,23 @@ This is <Highlight color="#25c2a0">Docusaurus green</Highlight> !
 This is <Highlight color="#1877F2">Facebook blue</Highlight> !
 ```
 
-export const Highlight = ({children, color}) => (
-  <span
-    style={{
-      backgroundColor: color,
-      borderRadius: '20px',
-      color: '#fff',
-      padding: '10px',
-      cursor: 'pointer',
-    }}
-    onClick={() => {
-      alert(`You clicked the color ${color} with label ${children}`);
-    }}>
-    {children}
-  </span>
+export const Highlight = ({ children, color }) => (
+	<span
+		style={{
+			backgroundColor: color,
+			borderRadius: "20px",
+			color: "#fff",
+			padding: "10px",
+			cursor: "pointer",
+		}}
+		onClick={() => {
+			alert(`You clicked the color ${color} with label ${children}`);
+		}}>
+		{children}
+	</span>
 );
 
 This is <Highlight color="#25c2a0">Docusaurus green</Highlight> !
 
 This is <Highlight color="#1877F2">Facebook blue</Highlight> !
+

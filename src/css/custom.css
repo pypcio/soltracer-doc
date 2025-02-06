@@ -6,25 +6,109 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
-  --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+	--ifm-color-primary: #133f86;
+	--ifm-color-primary-dark: #113979;
+	--ifm-color-primary-darker: #103672;
+	--ifm-color-primary-darkest: #0d2c5e;
+	--ifm-color-primary-light: #154593;
+	--ifm-color-primary-lighter: #16489a;
+	--ifm-color-primary-lightest: #1952ae;
+	--ifm-code-font-size: 95%;
+	--docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+	--docusaurus-success-border: #154593;
+	--ifm-color-success: #133f86;
+	--ifm-color-success-dark: #113979;
+	--ifm-color-success-darker: #103672;
+	--ifm-color-success-darkest: #0d2c5e;
+	--ifm-color-success-light: #154593;
+	--ifm-color-success-lighter: #16489a;
+	--ifm-color-success-lightest: #1952ae;
+	--ifm-color-success-contrast-background: rgba(19, 63, 134, 0.15) !important;
+	--ifm-color-success-contrast-foreground: #133f86 !important;
+
+	/* Danger colors - using similar hue pattern but shifted to red spectrum */
+	--ifm-color-danger: #851919;
+	--ifm-color-danger-dark: #781616;
+	--ifm-color-danger-darker: #711515;
+	--ifm-color-danger-darkest: #5d1111;
+	--ifm-color-danger-light: #921b1b;
+	--ifm-color-danger-lighter: #991d1d;
+	--ifm-color-danger-lightest: #ad2121;
+	--ifm-color-danger-contrast-background: rgba(220, 38, 38, 0.15) !important;
+	--ifm-color-danger-contrast-foreground: #851919 !important;
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+[data-theme="dark"] {
+	--ifm-color-primary: #bad0f2;
+	--ifm-color-primary-dark: #96b7eb;
+	--ifm-color-primary-darker: #84abe8;
+	--ifm-color-primary-darkest: #4e86de;
+	--ifm-color-primary-light: #dee9f9;
+	--ifm-color-primary-lighter: #f0f5fc;
+	--ifm-color-primary-lightest: #ffffff;
+	--docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+	--docusaurus-success-border: #96b7eb;
+	--ifm-color-success: #bad0f2;
+	--ifm-color-success-dark: #96b7eb;
+	--ifm-color-success-darker: #84abe8;
+	--ifm-color-success-darkest: #4e86de;
+	--ifm-color-success-light: #dee9f9;
+	--ifm-color-success-lighter: #f0f5fc;
+	--ifm-color-success-lightest: #ffffff;
+	--ifm-color-success-contrast-background: rgba(186, 208, 242, 0.15) !important;
+	--ifm-color-success-contrast-foreground: #bad0f2 !important;
+
+	/* Danger colors for dark theme */
+	--ifm-color-danger: #f97171;
+	--ifm-color-danger-dark: #f84e4e;
+	--ifm-color-danger-darker: #f73d3d;
+	--ifm-color-danger-darkest: #f30a0a;
+	--ifm-color-danger-light: #fa9494;
+	--ifm-color-danger-lighter: #fba5a5;
+	--ifm-color-danger-lightest: #fdd9d9;
+	--ifm-color-danger-contrast-background: rgba(220, 38, 38, 0.15) !important;
+	--ifm-color-danger-contrast-foreground: #f97171 !important;
 }
+
+.alert--danger {
+	--ifm-alert-background-color: rgba(220, 38, 38, 0.15) !important;
+	--ifm-alert-background-color-highlight: rgba(220, 38, 38, 0.1);
+	--ifm-alert-foreground-color: #851919 !important;
+	--ifm-alert-border-color: #851919;
+}
+
+.alert--success {
+	--ifm-alert-background-color: rgba(19, 63, 134, 0.15) !important;
+	--ifm-alert-background-color-highlight: rgba(19, 63, 134, 0.1);
+	--ifm-alert-foreground-color: var(--ifm-color-success) !important;
+	--ifm-alert-border-color: var(--ifm-color-success);
+}
+
+.alert--secondary {
+	--ifm-alert-background-color: rgba(115, 109, 96, 0.15) !important;
+	--ifm-alert-background-color-highlight: rgba(115, 109, 96, 0.1);
+	/* --ifm-alert-foreground-color: var(--ifm-color-success) !important; */
+	--ifm-alert-border-color: rgba(53, 50, 44, 0.675);
+}
+
+[data-theme="dark"] .alert--danger {
+	--ifm-alert-background-color: rgba(239, 68, 68, 0.15) !important;
+	--ifm-alert-background-color-highlight: rgba(239, 68, 68, 0.1);
+	--ifm-alert-foreground-color: #f97171 !important;
+	--ifm-alert-border-color: #f97171;
+}
+
+[data-theme="dark"] .alert--success {
+	--ifm-alert-background-color: rgba(52, 115, 209, 0.3) !important;
+	--ifm-alert-background-color-highlight: rgba(52, 115, 209, 0.2);
+	--ifm-alert-foreground-color: var(--ifm-color-success) !important;
+	--ifm-alert-border-color: var(--ifm-color-success);
+}
+
+[data-theme="dark"] .alert--secondary {
+	--ifm-alert-background-color: rgba(209, 202, 184, 0.25) !important;
+	--ifm-alert-background-color-highlight: rgba(209, 202, 184, 0.1);
+	/* --ifm-alert-foreground-color: var(--ifm-color-success) !important; */
+	--ifm-alert-border-color: rgba(209, 202, 184, 0.675);
+}
+
