@@ -10,3 +10,4 @@ tags: [architecture]
 Get started by **creating a new site**.
 
 Super fast page fix
+### Second fix
